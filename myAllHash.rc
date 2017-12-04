@@ -1,0 +1,320 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\myAllHash.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\myAllHash.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HASH计算（线程版）"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HASH计算（线程版） 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权归李响所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MYALLHASH_DIALOG DIALOGEX 0, 0, 590, 351
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HASH计算（线程版 ）(李)"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_STR,65,23,510,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILE,65,50,240,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "字符串",IDC_RADIO_STR,"Button",BS_AUTORADIOBUTTON,13,25,
+                    38,13
+    CONTROL         "文件运算",IDC_RADIO_FILE,"Button",BS_AUTORADIOBUTTON,13,
+                    49,43,15
+    PUSHBUTTON      "浏览",IDC_BUTTON_FILE,318,44,52,18
+    DEFPUSHBUTTON   "计算",IDC_BUTTON_RUN,385,44,52,18
+    EDITTEXT        IDC_EDIT_MD4,63,97,136,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MD5,63,112,136,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SHA1,63,127,167,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SHA224,63,142,233,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SHA256,63,157,263,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SHA384,63,172,393,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SHA512,63,187,516,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "MD4",IDC_CHECK_MD4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,97,47,12
+    CONTROL         "MD5",IDC_CHECK_MD5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,112,47,12
+    CONTROL         "SHA160",IDC_CHECK_SHA1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,127,47,12
+    CONTROL         "SHA224",IDC_CHECK_SHA224,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,142,47,12
+    CONTROL         "SHA256",IDC_CHECK_SHA256,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,157,47,12
+    CONTROL         "SHA384",IDC_CHECK_SHA384,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,172,47,12
+    CONTROL         "SHA512",IDC_CHECK_SHA512,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,187,47,12
+    PUSHBUTTON      "退出",IDC_BUTTON_BYE,519,44,52,18
+    GROUPBOX        "运算数值",IDC_STATIC,7,74,576,189
+    GROUPBOX        "数据输入",IDC_STATIC,7,7,576,64
+    CONTROL         "RIPE128",IDC_CHECK_RIPE128,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,202,47,12
+    CONTROL         "RIPE160",IDC_CHECK_RIPE160,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,217,47,12
+    CONTROL         "RIPE256",IDC_CHECK_RIPE256,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,232,47,12
+    CONTROL         "RIPE320",IDC_CHECK_RIPE320,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,247,47,12
+    EDITTEXT        IDC_EDIT_RIPE128,63,202,136,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_RIPE160,63,217,167,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_RIPE256,63,232,263,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_RIPE320,63,247,330,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "全选",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,85,39,12
+    PUSHBUTTON      "保存结果",IDC_BUTTON_RESULT,452,44,52,18
+    GROUPBOX        "运算时间及效率",IDC_STATIC,7,268,576,71
+    EDITTEXT        IDC_EDIT_PERTIME1,79,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME1,79,297,35,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME2,125,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME2,125,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME3,171,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME3,171,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME4,217,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME4,217,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME5,263,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME5,263,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME6,309,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME6,309,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME7,355,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME7,355,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME8,401,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME8,401,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME9,447,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME9,447,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME10,493,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME10,493,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PERTIME11,539,317,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME11,539,297,35,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "MD4",IDC_STATIC,79,282,33,12
+    LTEXT           "MD5",IDC_STATIC,125,282,33,12
+    LTEXT           "SHA160",IDC_STATIC,171,282,33,12
+    LTEXT           "SHA224",IDC_STATIC,217,282,33,12
+    LTEXT           "SHA256",IDC_STATIC,263,282,33,12
+    LTEXT           "SHA384",IDC_STATIC,309,282,33,12
+    LTEXT           "RIPE160",IDC_STATIC,447,282,33,12
+    LTEXT           "RIPE128",IDC_STATIC,401,282,33,12
+    LTEXT           "SHA512",IDC_STATIC,355,282,33,12
+    LTEXT           "RIPE256",IDC_STATIC,493,282,33,12
+    LTEXT           "RIPE320",IDC_STATIC,539,282,33,12
+    LTEXT           "用时(ms)",IDC_STATIC,19,300,46,10
+    LTEXT           "处理效率(b/ms)",IDC_STATIC,19,320,56,10
+    PUSHBUTTON      "清  除",IDC_BUTTON_CLEAR,21,279,40,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "myAllHash Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "myAllHash\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "myAllHash.EXE\0"
+            VALUE "ProductName", "myAllHash 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MYALLHASH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 583
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 myAllHash(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\myAllHash.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
